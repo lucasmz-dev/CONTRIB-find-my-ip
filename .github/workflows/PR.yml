@@ -18,7 +18,7 @@ jobs:
           cache: 'gradle'
 
       - name: Build debug APK and run jvm tests
-        run: ./gradlew lint test assemble
+        run: ./gradlew lint test assembleDebug
         env:
           PULL_REQUEST: 'true'
 
